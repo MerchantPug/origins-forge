@@ -9,4 +9,4 @@
 [submodule "origins"]
 	path = origins
 	url = git@github.com:MerchantPug/origins-fabric.git
-	branch = 1.19.x
+	branch = 1.19.x/forge
