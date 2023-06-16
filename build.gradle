@@ -138,7 +138,7 @@ allprojects {
 
 		//implementation fg.deobf(group: 'me.shedaniel.cloth', name: 'cloth-config-forge', version: "${cloth_config_version}")
 		implementation fg.deobf(group: 'top.theillusivec4.caelus', name: 'caelus-forge', version: "1.18.1-${caelus_version}")
-		runtimeOnly(fg.deobf(group: 'com.github.EdwinMindcraft.AdditionalEntityAttributes', name: 'Forge', version: "${minecraft_version}-SNAPSHOT") {
+		runtimeOnly(fg.deobf(group: 'com.github.MerchantPug.AdditionalEntityAttributes', name: 'Forge', version: "1.0.1-1.18.2") {
 			exclude group: 'net.minecraftforge'
 		})
 		compileOnly(group: 'com.github.EdwinMindcraft.AdditionalEntityAttributes', name: 'Forge', version: "${minecraft_version}-SNAPSHOT") {
