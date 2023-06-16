@@ -141,7 +141,7 @@ allprojects {
 		runtimeOnly(fg.deobf(group: 'com.github.MerchantPug.AdditionalEntityAttributes', name: 'Forge', version: "1.0.1-1.18.2") {
 			exclude group: 'net.minecraftforge'
 		})
-		compileOnly(group: 'com.github.EdwinMindcraft.AdditionalEntityAttributes', name: 'Forge', version: "${minecraft_version}-SNAPSHOT") {
+		compileOnly(group: 'com.github.MerchantPug.AdditionalEntityAttributes', name: 'Forge', version: "1.0.1-1.18.2") {
 			exclude group: 'net.minecraftforge'
 		}
 	}
@@ -222,7 +222,7 @@ shadowJar {
 		include(dependency {
 			it.moduleGroup == 'io.github.edwinmindcraft'
 		})
-		include dependency(group: 'com.github.EdwinMindcraft.AdditionalEntityAttributes', name: 'Forge', version: "${minecraft_version}-SNAPSHOT")
+		include dependency(group: 'com.github.MerchantPug.AdditionalEntityAttributes', name: 'Forge', version: "1.0.1-1.18.2")
 	}
 	subprojects.each {
 		dependsOn(it.getTasksByName("reobfJar", true))
